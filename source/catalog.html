@@ -34,69 +34,63 @@
         </div>
       </nav>
     </header>
-    <main class="container__main">
-      <section class="container__section">
-        <h1 class="visually-hidden">Сайт городка Седона</h1>
-        <img class="container__section-image" src="img/welcome-title.svg" width="282" height="214" alt="Добро пожаловать! Седона великолепна, а Гранд Каньон - отстой!">
-        <p class="container__section-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-      </section>
-      <section class="container__section advantages">
-        <h2 class="visually-hidden">Преимущества Седоны.</h2>
-        <p class="advantages__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item--with-content">
-            <h3 class="advantages__title">Настоящий городок</h3>
-            <span class="advantages__num">>— №1 —</span>
-            <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantages__image" src="img/sedona-street.jpg" width="520" height="260" alt="Улица городка Седона.">
+    <main class="container__catalog">
+      <header class="container__header welcome">
+        <h2 class="welcome__intro">Оставьте свой отзыв</h2>
+        <p class="welcome__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </header>
+      <section class="container__section content">
+        <ul class="content__list">
+          <li class="content__item">
+            <figure class="content__card">
+              <a class="content__link" target="_blank" href="img/road-to-sunset.jpg">
+                <img class="content__image" src="img/road-to-sunset.jpg" width="280" height="280" alt="Дорога и закат.">
+              </a>
+              <figcaption class="content__description">Неродные просторы</figcaption>
+              <span class="content__author">Автор фото: Борис</span>
+            </figure>
+            <button class="content__button like-button"></button>
+            <span class="content__like-count">1350</span>
           </li>
-          <li class="advantages__item infrastructure">
-            <ul class="infrastructure__list">
-              <li class="infrastructure__item infrastructure__item--accommodation">
-                <h3 class="infrastructure__title">Жильё</h3>
-                <p class="infrastructure__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-              </li>
-              <li class="infrastructure__item infrastructure__item--eat">
-                <h3 class="infrastructure__title">Еда</h3>
-                <p class="infrastructure__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-              </li>
-              <li class="infrastructure__item infrastructure__item--souvenirs">
-                <h3 class="infrastructure__title">Сувениры</h3>
-                <p class="infrastructure__description">Не только китайского, но и настоящего местного производства!</p>
-              </li>
-            </ul>
+          <li class="content__item">
+            <figure class="content__card">
+              <a class="content__link" target="_blank" href="img/sedona-plants.jpg">
+                <img class="content__image" src="img/sedona-plants.jpg" width="280" height="280" alt="Фото кактуса.">
+              </a>
+              <figcaption class="content__description">Местная растительность</figcaption>
+              <span class="content__author">Автор фото: Сергей</span>
+            </figure>
+            <button class="content__button like-button"></button>
+            <span class="content__like-count">143</span>
           </li>
-          <li class="advantages__item advantages__item--with-content">
-            <h3 class="advantages__title">Там есть мост дьявола</h3>
-            <span class="advantages__num">— №2 —</span>
-            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img class="advantages_image" src="img/devil-bridge.jpg" width="320" height="260" alt="Мост дьявола.">
+          <li class="content__item">
+            <figure class="content__card">
+              <a class="content__link" target="_blank" href="img/road-in-forest.jpg">
+                <img class="content__image" src="img/road-in-forest.jpg" width="280" height="280" alt="Автомобильная дорога в лесу.">
+              </a>
+              <figcaption class="content__description">Дорога на север</figcaption>
+              <span class="content__author">Автор фото: Петр</span>
+            </figure>
+            <button class="content__button like-button"></button>
+            <span class="content__like-count">96</span>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Небольшая площадь</h3>
-            <span class="advantages__num">— №3 —</span>
-            <p class="advantages__description">Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Красивая дорога</h3>
-            <span class="advantages__num">— №4 —</span>
-            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Мало туристов</h3>
-            <span class="advantages__num">— №5 —</span>
-            <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
+          <li class="content__item">
+            <figure class="content__card">
+              <a class="content__link" target="_blank" href="img/devil-bridge.jpg">
+                <img class="content__image" src="img/devil-bridge.jpg" width="280" height="280" alt="Мост Дьявола.">
+              </a>
+              <figcaption class="content__description">Мост Дьявола</figcaption>
+              <span class="content__author">Автор фото: Антон</span>
+            </figure>
+            <button class="content__button like-button"></button>
+            <span class="content__like-count">254</span>
           </li>
         </ul>
-      </section>
-      <section class="container__section hotel-search">
-        <h2 class="hotel-search__title">Заинтересовались?</h2>
-        <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="hotel-search__link button" href="#">Найти гостиницу</a>
-      </section>
-      <section class="container__section interactive-map">
-        <h2 class="visually-hidden">Интерактивная карта с отметкой города Седона</h2>
-        <iframe class="interactive-map__location" src="https://yandex.ru/map-widget/v1/?um=constructor%3A028657c73f597f3132a04567b7ff5d564326c83ddb918409edcd592ef64767b5&amp;source=constructor" width="100%" height="350" frameborder="0"></iframe>
+        <div class="container__section video-presentation">
+          <h2 class="video-presentation__title">Все еще сомневаетесь?</h2>
+          <p class="video-presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <img class="video-presentation__video" src="img/video-presentation.jpg" width="266" height="116" alt="Видео-презентация.">
+        </div>
       </section>
     </main>
     <footer class="container__footer page-footer">
