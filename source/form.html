@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -40,75 +41,75 @@
         <p class="leave-feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </header>
       <section class="feedback-section">
-        <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__intro">Представьтесь:</legend>
-            <label class="feedback-form__field-description">
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="form__fieldset">
+            <legend class="form__intro">Представьтесь:</legend>
+            <label class="form__field-description">
               Имя*:
-              <input class="feedback-form__field" type="text" name="name" placeholder="Пётр">
+              <input class="form__field" type="text" name="name" placeholder="Пётр">
             </label>
-            <label class="feedback-form__field-description">
+            <label class="form__field-description">
               Фамилия*:
-              <input class="feedback-form__field" type="text" name="surname" placeholder="Пустота">
+              <input class="form__field" type="text" name="surname" placeholder="Пустота">
             </label>
-            <label class="feedback-form__field-description">
+            <label class="form__field-description">
               Отчество:
-              <input class="feedback-form__field" type="text" name="patronymic" placeholder="Викторович">
+              <input class="form__field" type="text" name="patronymic" placeholder="Викторович">
             </label>
           </fieldset>
-          <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__intro">Контактная информация:</legend>
-            <label class="feedback-form__field-description">
+          <fieldset class="form__fieldset">
+            <legend class="form__intro">Контактная информация:</legend>
+            <label class="form__field-description">
               Контактный телефон*:
-              <input class="feedback-form__field feedback-form__field--phone" type="tel" name="phone" placeholder="Введите телефон">
+              <input class="form__field form__field--phone" type="tel" name="phone" placeholder="Введите телефон">
             </label>
-            <label class="feedback-form__field-description">
+            <label class="form__field-description">
               Электронная почта*:
-              <input class="feedback-form__field feedback-form__field--email" type="email" name="email" placeholder="Введите e-mail">
+              <input class="form__field form__field--email" type="email" name="email" placeholder="Введите e-mail">
             </label>
           </fieldset>
-          <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__intro">Ваше общее впечатление:</legend>
-            <label class="feedback-form__label">
-              <input class="feedback-form__field" type="radio" name="impression-group" value="positive" checked>
+          <fieldset class="form__fieldset">
+            <legend class="form__intro">Ваше общее впечатление:</legend>
+            <label class="form__label">
+              <input class="form__field" type="radio" name="impression-group" value="positive" checked>
               Скорее положительное
             </label>
-            <label class="feedback-form__label">
-              <input class="feedback-form__field" type="radio" name="impression-group" value="negative">
+            <label class="form__label">
+              <input class="form__field" type="radio" name="impression-group" value="negative">
               Скорее отрицательное
             </label>
-            <label class="feedback-form__label">
-              <input class="feedback-form__field" type="radio" name="impression-group" value="dont-know">
+            <label class="form__label">
+              <input class="form__field" type="radio" name="impression-group" value="dont-know">
               Затрудняюсь ответить
             </label>
           </fieldset>
-          <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__intro">Посещенные достопримечательности:</legend>
-            <label class="feedback-form__label">
-              <input class="feedback-form__field" type="checkbox" name="devil-bridge" checked>
+          <fieldset class="form__fieldset">
+            <legend class="form__intro">Посещенные достопримечательности:</legend>
+            <label class="form__label">
+              <input class="form__field" type="checkbox" name="devil-bridge" checked>
               Мост Дьявола
             </label>
-            <label class="feedback-form__label">
-              <input class="feedback-form__field" type="checkbox" name="bell-mount" checked>
+            <label class="form__label">
+              <input class="form__field" type="checkbox" name="bell-mount" checked>
               Гора-Колокол
             </label>
-            <label class="feedback-form__label">
-              <input class="feedback-form__field" type="checkbox" name="slide-park" checked>
+            <label class="form__label">
+              <input class="form__field" type="checkbox" name="slide-park" checked>
               Слайд-парк
             </label>
-            <label class="feedback-form__label">
-              <input class="feedback-form__field" type="checkbox" name="red-rocks">
+            <label class="form__label">
+              <input class="form__field" type="checkbox" name="red-rocks">
               Красные скалы
             </label>
           </fieldset>
-          <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__intro">Опишите свои эмоции:</legend>
-            <textarea class="feedback-form__text" name="emotions">
+          <fieldset class="form__fieldset">
+            <legend class="form__intro">Опишите свои эмоции:</legend>
+            <textarea class="form__text" name="emotions">
               Опишите подробно все свои восторги
             </textarea>
           </fieldset>
-          <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
-          <span class="feedback-form__footnote footnote">* — обязательные поля</span>
+          <button class="form__button button" type="submit">Отправить отзыв</button>
+          <span class="form__footnote footnote">* — обязательные поля</span>
         </form>
       </section>
     </main>
