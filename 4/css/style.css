@@ -1,0 +1,267 @@
+.advantages__intro {
+  margin: 0;
+  color: #333333;
+  text-transform: uppercase;
+}
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.advantages__item {
+  background-color: #eee;
+}
+.advantages__item--with-content {
+  color: #fff;
+  background-color: #81b3d2;
+}
+.advantages__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.advantages__description {
+  margin: 0;
+  text-transform: uppercase;
+}
+.additional-header__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.additional-header__description {
+  margin: 0;
+  color: #333333;
+  text-transform: uppercase;
+}
+.form__intro {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.form__field-description {
+  color: #333333;
+  text-transform: uppercase;
+}
+.form__field {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.form__field::placeholder {
+  color: #000000;
+}
+.form__field--phone::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.form__field--email::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.form__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.form__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.form__footnote {
+  color: rgba(51, 51, 51, 0.6);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.hashtag {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header {
+  min-height: 56px;
+}
+.header__logo {
+  position: relative;
+}
+.header__button {
+  display: block;
+  margin-left: auto;
+  width: 68px;
+  height: 56px;
+}
+.hotel-search__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.hotel-search__description {
+  margin: 0;
+  text-transform: uppercase;
+  color: #333;
+}
+.infrastructure__list {
+  padding: 0;
+  list-style-type: none;
+}
+.infrastructure__item {
+  background-color: #fff;
+}
+.infrastructure__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.infrastructure__description {
+  margin: 0;
+  color: #333;
+  text-transform: uppercase;
+}
+.logo {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+}
+.menu {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.menu__list--close {
+  display: none;
+}
+.menu__item {
+  text-align: center;
+}
+.menu__link {
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+.modal__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.modal__description {
+  margin: 0;
+  text-transform: uppercase;
+  color: #333333;
+}
+.photos__card {
+  margin: 0;
+}
+.photos__description {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.photos__author {
+  color: #333333;
+}
+.photos__like-count {
+  font-weight: 700;
+}
+.secondary-logo {
+  background-color: #3f5e72;
+  background-image: url("../../img/secondary-welcome-mountains.jpg");
+  background-repeat: no-repeat;
+}
+.stamp__link {
+  text-decoration: none;
+}
+.stamp__description {
+  margin: 0;
+  text-transform: uppercase;
+  color: #000;
+}
+.video-presentation__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.video-presentation__description {
+  margin: 0;
+  color: #333333;
+  text-transform: uppercase;
+}
+.welcome__wrap {
+  background-color: #3f5e72;
+  background-image: url("../../img/welcome-mountains.jpg");
+  background-repeat: no-repeat;
+}
+.welcome__description {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2");
+  font-display: swap;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+* {
+  outline: 1px solid red;
+}
+/*# sourceMappingURL=style.css.map */
