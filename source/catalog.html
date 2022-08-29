@@ -8,15 +8,15 @@
   </head>
   <body>
     <header class="header">
+      <a class="header__logo logo" href="index.html">
+        <img class="logo__image" src="img/main-logo.svg" width="185" height="96" alt="Логотип сайта">
+      </a>
+      <button class="header__button header__button--close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
       <nav class="header__navigation">
-        <a class="header__logo logo" href="index.html">
-          <img class="logo__image" src="img/main-logo.svg" width="185" height="96" alt="Логотип сайта">
-        </a>
-        <div class="header__menu menu">
-          <button class="menu__button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
-          <ul class="menu__list">
+        <div class="menu">
+          <ul class="menu__list menu__list--close">
             <li class="menu__item">
               <a class="menu__link" href="index.html">Главная</a>
             </li>
@@ -42,7 +42,7 @@
         <p class="additional-header__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </header>
       <section class="photos">
-        <figure class="photos__card">
+        <figure class="photos__card photos__card--main-slide">
           <a class="photos__link" target="_blank" href="img/road-to-sunset.jpg">
             <img class="photos__image" src="img/road-to-sunset.jpg" width="280" height="280" alt="Дорога и закат.">
           </a>
@@ -78,11 +78,11 @@
           <a class="photos__link like-button"></a>
           <span class="photos__like-count">254</span>
         </figure>
-        <div class="video-presentation">
-          <h2 class="video-presentation__title">Все еще сомневаетесь?</h2>
-          <p class="video-presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <img class="video-presentation__video" src="img/video-presentation.jpg" width="266" height="116" alt="Видео-презентация.">
-        </div>
+      </section>
+      <section class="video-presentation">
+        <h2 class="video-presentation__title">Все еще сомневаетесь?</h2>
+        <p class="video-presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <img class="video-presentation__video" src="img/video-presentation.jpg" width="266" height="116" alt="Видео-презентация.">
       </section>
     </main>
     <footer class="footer">
