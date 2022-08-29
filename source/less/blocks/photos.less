@@ -1,0 +1,42 @@
+.photos__card {
+  margin: 0;
+}
+
+.photos__description {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.photos__author {
+  color: #333333;
+}
+
+.photos__like-count {
+  font-weight: 700;
+}
+
+@media (min-width: @tablet-width) {
+  .photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .photos__card {
+    &--main-slide {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .photos__card {
+    &--main-slide {
+      grid-column: 1 / -1;
+    }
+  }
+}

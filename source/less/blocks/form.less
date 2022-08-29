@@ -1,0 +1,83 @@
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__intro {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.form__field-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__field-description {
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.form__field {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  &::placeholder {
+    color: #000000;
+  }
+
+  &--phone::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &--email::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.form__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.form__footnote {
+  color: rgba(51, 51, 51, 0.6);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .form__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__impression-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__sight-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__field-sight-wrap {
+    width: 300px;
+  }
+
+  .form__field-impression-wrap {
+    width: 300px;
+  }
+}

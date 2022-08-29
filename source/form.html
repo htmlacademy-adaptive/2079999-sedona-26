@@ -2,19 +2,21 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
+      <a class="header__logo logo" href="index.html">
+        <img class="logo__image" src="img/main-logo.svg" width="185" height="96" alt="Логотип сайта">
+      </a>
+      <button class="header__button header__button--close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
       <nav class="header__navigation">
-        <a class="header__logo logo" href="index.html">
-          <img class="logo__image" src="img/main-logo.svg" width="185" height="96" alt="Логотип сайта">
-        </a>
-        <div class="header__menu menu">
-          <button class="menu__button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
-          <ul class="menu__list">
+        <div class="menu">
+          <ul class="menu__list menu__list--close">
             <li class="menu__item">
               <a class="menu__link" href="index.html">Главная</a>
             </li>
@@ -32,83 +34,89 @@
       </nav>
     </header>
     <main class="main">
-      <header class="leave-feedback">
+      <header class="additional-header">
         <div class="secondary-logo">
           <img class="secondary-logo__image" src="img/secondary-logo.svg" width="229" height="39" alt="Логотип города Седона.">
         </div>
-        <h2 class="leave-feedback__title">Оставьте свой отзыв</h2>
-        <p class="leave-feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <h2 class="additional-header__title">Оставьте свой отзыв</h2>
+        <p class="additional-header__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </header>
       <section class="feedback-section">
-        <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__intro">Представьтесь:</legend>
-            <label class="feedback-form__field-description">
-              Имя*:
-              <input class="feedback-form__field" type="text" name="name" placeholder="Пётр">
-            </label>
-            <label class="feedback-form__field-description">
-              Фамилия*:
-              <input class="feedback-form__field" type="text" name="surname" placeholder="Пустота">
-            </label>
-            <label class="feedback-form__field-description">
-              Отчество:
-              <input class="feedback-form__field" type="text" name="patronymic" placeholder="Викторович">
-            </label>
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__wrap">
+            <fieldset class="form__fieldset">
+              <legend class="form__intro">Представьтесь:</legend>
+              <div class="form__field-wrap">
+                <label class="form__field-description" for="name">Имя*:</label>
+                <input class="form__field" type="text" name="name" id="name" placeholder="Пётр">
+              </div>
+              <div class="form__field-wrap">
+                <label class="form__field-description" for="surname">Фамилия*:</label>
+                <input class="form__field" type="text" name="surname" id="surname" placeholder="Пустота">
+              </div>
+              <div class="form__field-wrap">
+                <label class="form__field-description" for="patronymic">Отчество:</label>
+                <input class="form__field" type="text" name="patronymic" id="patronymic" placeholder="Викторович">
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__intro">Контактная информация:</legend>
+              <div class="form__field-wrap">
+                <label class="form__field-description" for="phone">Контактный телефон*:</label>
+                <input class="form__field form__field--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон">
+              </div>
+              <div class="form__field-wrap">
+                <label class="form__field-description" for="email">Электронная почта*:</label>
+                <input class="form__field form__field--email" type="email" name="email" id="email" placeholder="Введите e-mail">
+              </div>
+            </fieldset>
+          </div>
+          <fieldset class="form__fieldset">
+            <legend class="form__intro">Ваше общее впечатление:</legend>
+            <div class="form__impression-wrap">
+              <div class="form__field-impression-wrap">
+                <input class="form__field" type="radio" name="impression-group" value="positive" id="positive" checked>
+                <label class="form__label" for="positive">Скорее положительное</label>
+              </div>
+              <div class="form__field-impression-wrap">
+                <input class="form__field" type="radio" name="impression-group" value="negative" id="negative">
+                <label class="form__label" for="negative">Скорее отрицательное</label>
+              </div>
+              <div class="form__field-impression-wrap">
+                <input class="form__field" type="radio" name="impression-group" value="dont-know" id="dont-know">
+                <label class="form__label" for="dont-know">Затрудняюсь ответить</label>
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__intro">Контактная информация:</legend>
-            <label class="feedback-form__field-description">
-              Контактный телефон*:
-              <input class="feedback-form__field feedback-form__field--phone" type="tel" name="phone" placeholder="Введите телефон">
-            </label>
-            <label class="feedback-form__field-description">
-              Электронная почта*:
-              <input class="feedback-form__field feedback-form__field--email" type="email" name="email" placeholder="Введите e-mail">
-            </label>
+          <fieldset class="form__fieldset">
+            <legend class="form__intro">Посещенные достопримечательности:</legend>
+            <div class="form__sight-wrap">
+              <div class="form__field-sight-wrap">
+                <input class="form__field" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+                <label class="form__label" for="devil-bridge">Мост Дьявола</label>
+              </div>
+              <div class="form__field-sight-wrap">
+                <input class="form__field" type="checkbox" name="bell-mount" id="bell-mount" checked>
+                <label class="form__label" for="bell-mount">Гора-Колокол</label>
+              </div>
+              <div class="form__field-sight-wrap">
+                <input class="form__field" type="checkbox" name="slide-park" id="slide-park" checked>
+                <label class="form__label" for="slide-park">Слайд-парк</label>
+              </div>
+              <div class="form__field-sight-wrap">
+                <input class="form__field" type="checkbox" name="red-rocks" id="red-rocks">
+                <label class="form__label" for="red-rocks">Красные скалы</label>
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__intro">Ваше общее впечатление:</legend>
-            <label class="feedback-form__label">
-              <input class="feedback-form__field" type="radio" name="impression-group" value="positive" checked>
-              Скорее положительное
-            </label>
-            <label class="feedback-form__label">
-              <input class="feedback-form__field" type="radio" name="impression-group" value="negative">
-              Скорее отрицательное
-            </label>
-            <label class="feedback-form__label">
-              <input class="feedback-form__field" type="radio" name="impression-group" value="dont-know">
-              Затрудняюсь ответить
-            </label>
-          </fieldset>
-          <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__intro">Посещенные достопримечательности:</legend>
-            <label class="feedback-form__label">
-              <input class="feedback-form__field" type="checkbox" name="devil-bridge" checked>
-              Мост Дьявола
-            </label>
-            <label class="feedback-form__label">
-              <input class="feedback-form__field" type="checkbox" name="bell-mount" checked>
-              Гора-Колокол
-            </label>
-            <label class="feedback-form__label">
-              <input class="feedback-form__field" type="checkbox" name="slide-park" checked>
-              Слайд-парк
-            </label>
-            <label class="feedback-form__label">
-              <input class="feedback-form__field" type="checkbox" name="red-rocks">
-              Красные скалы
-            </label>
-          </fieldset>
-          <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__intro">Опишите свои эмоции:</legend>
-            <textarea class="feedback-form__text" name="emotions">
+          <fieldset class="form__fieldset">
+            <legend class="form__intro">Опишите свои эмоции:</legend>
+            <textarea class="form__text" name="emotions">
               Опишите подробно все свои восторги
             </textarea>
           </fieldset>
-          <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
-          <span class="feedback-form__footnote footnote">* — обязательные поля</span>
+          <button class="form__button button" type="submit">Отправить отзыв</button>
+          <span class="form__footnote footnote">* — обязательные поля</span>
         </form>
       </section>
     </main>
