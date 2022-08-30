@@ -11,4 +11,52 @@
   margin-left: auto;
   width: 68px;
   height: 56px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    width: 23px;
+    height: 4px;
+    background-color: #81b3d2;
+    box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
+  }
+}
+
+.header__button--close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background-color: #81b3d2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 17px;
+    width: 28px;
+    height: 4px;
+    transform: rotate(45deg);
+    background-color: #ffffff;
+    z-index: 2;
+    box-shadow: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 17px;
+    width: 28px;
+    height: 4px;
+    transform: rotate(-45deg);
+    background-color: #ffffff;
+    z-index: 3;
+    box-shadow: none;
+  }
 }
