@@ -1,6 +1,6 @@
 .welcome__wrap {
   background-color: #3f5e72;
-  background-image: url("../img/welcome-mountains.jpg");
+  background-image: url("../img/welcome-mountains-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -10,7 +10,7 @@
     min-height: 57px;
     background-image: url("../img/welcome-divider.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 57px;
   }
 }
 
@@ -26,4 +26,15 @@
 .welcome__image {
   padding: 90px 0 85px 0;
   vertical-align: bottom;
+}
+
+@media(min-width: @tablet-width) {
+  .welcome__wrap {
+    background-image: url("../img/welcome-mountains-tablet.jpg");
+  }
+
+  .welcome__description {
+    margin: 0;
+    padding: 48px 124px 28px;
+  }
 }

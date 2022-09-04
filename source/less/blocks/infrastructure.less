@@ -4,11 +4,31 @@
 }
 
 .infrastructure__item {
+  padding: 0 18px;
+  text-align: left;
   background-color: #ffffff;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  background-position: 25px 18px;
+
+
+  &--accommodation {
+    background-image: url(../img/accomodation-icon.svg);
+  }
+
+  &--eat {
+    background-image: url(../img/burger-icon.svg);
+  }
+
+  &--souvenirs {
+    background-image: url(../img/gift-icon.svg);
+  }
 }
 
 .infrastructure__title {
   margin: 0;
+  padding: 31px 0 16px 66px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -16,7 +36,47 @@
 }
 
 .infrastructure__description {
+  padding-left: 66px;
   margin: 0;
   color: #333333;
   text-transform: uppercase;
+}
+
+.infrastructure__item--souvenirs {
+  padding-bottom: 52px;
+}
+
+@media(min-width: @tablet-width) {
+  .infrastructure__item {
+    padding: 0 18px;
+    text-align: left;
+    background-color: #ffffff;
+    position: relative;
+    background-repeat: no-repeat;
+
+    // &::after {
+    //   display: block;
+    //   // content: "";
+    //   // position: absolute;
+    //   // top: 31px;
+    //   // left:auto;
+    //   width: 75px;
+    //   height: 75px;
+    //   margin: 0 auto;
+    //   // background-repeat: no-repeat;
+    // }
+
+    &--accommodation {
+      background-image: url(../img/accomodation-icon-tablet.svg);
+
+    }
+
+    &--eat {
+      background-image: url(../img/burger-icon-tablet.svg);
+    }
+
+    &--souvenirs {
+      background-image: url(../img/gift-icon-tablet.svg);
+    }
+  }
 }
