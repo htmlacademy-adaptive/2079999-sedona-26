@@ -1,5 +1,38 @@
 .secondary-logo {
+  min-height: 158px;
+  margin-bottom: 37px;
   background-color: #3f5e72;
   background-image: url("../img/secondary-welcome-mountains.jpg");
   background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+
+  &::after {
+    content: "";
+    display: block;
+    margin-top: auto;
+    min-height: 57px;
+    background-image: url("../img/welcome-divider.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 57px;
+    background-position: bottom;
+  }
+}
+
+.secondary-logo__image {
+  margin: 52px 0 10px;
+  vertical-align: bottom;
+}
+@media(min-width: @tablet-width) {
+  .secondary-logo {
+    min-height: 290px;
+    background-image: url("../img/secondary-welcome-mountains-tablet.jpg");
+    margin-bottom: 61px;
+  }
+
+  .secondary-logo__image {
+    margin: 95px 0 60px;
+    width: 457px;
+    height: 78px;
+  }
 }

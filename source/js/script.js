@@ -12,3 +12,20 @@ headerButton.addEventListener('click', function () {
       headerButton.classList.remove('header__button--close');
     }
 });
+
+let likeButton = document.querySelector('.photos__like-button');
+let likeCount = document.querySelector('.photos__like-count');
+let value = parseFloat(likeCount.innerHTML);
+
+likeButton.addEventListener('click', () => {
+    if(likeButton.classList.contains('photos__like-button--liked')) {
+      likeButton.classList.remove('photos__like-button--liked');
+      value -= 1;
+      likeCount.innerHTML = value;
+    }
+    else {
+      value += 1;
+      likeCount.innerHTML = value;
+      likeButton.classList.add('photos__like-button--liked');
+    }
+});

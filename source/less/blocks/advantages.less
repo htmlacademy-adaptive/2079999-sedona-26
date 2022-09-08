@@ -24,8 +24,8 @@
     content: "";
     position: absolute;
     bottom: 0;
-    left: 18px;
-    width: 89%;
+    left: 5%;
+    width: 90%;
     height: 1px;
     background-color: #d6d6d6;
   }
@@ -93,7 +93,11 @@
     & > li:nth-child(3) {
       grid-column: 1 / -1;
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 2fr 1fr;
+    }
+
+    & > li:nth-child(3) div {
+      order: 1;
     }
   }
 
