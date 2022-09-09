@@ -1,6 +1,14 @@
+.stamp {
+
+}
+
 .stamp__link {
   text-decoration: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 40px 0 23px;
 }
 
 .stamp__description {
@@ -8,3 +16,10 @@
   text-transform: uppercase;
   color: #000000;
 }
+
+@media (min-width: @tablet-width) {
+  .stamp__link {
+  padding: 0;
+  }
+}
+

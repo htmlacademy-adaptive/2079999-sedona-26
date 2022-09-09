@@ -1,6 +1,11 @@
 .form__fieldset {
   display: flex;
+  margin: 0;
   flex-direction: column;
+  border: 0 none;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: left;
+  padding: 24px 20px 23px;
 }
 
 .form__intro {
@@ -8,33 +13,110 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
+  padding-top: 24px;
 }
 
 .form__field-wrap {
   display: flex;
   flex-direction: column;
+  margin-bottom: 16px;
 }
 
 .form__field-description {
   color: #333333;
   text-transform: uppercase;
+  margin-left: 16px;
+}
+
+.form__field-impression-wrap {
+  margin-bottom: 36px;
+
+  & label {
+    padding-left: 42px;
+  }
+}
+
+.form__field-sight-wrap {
+  margin-bottom: 36px;
+
+  & label {
+    padding-left: 42px;
+  }
 }
 
 .form__field {
+  position: relative;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  font-family: inherit;
+  padding: 16px;
+  border: none;
+  background-color: #f2f2f2;
 
   &::placeholder {
     color: #000000;
+  }
+
+  &--phone {
+    padding-right: 75px;
+    background-image: url("../img/phone-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right;
   }
 
   &--phone::placeholder {
     color: rgba(0, 0, 0, 0.3);
   }
 
+  &--email {
+    padding-right: 75px;
+    background-image: url("../img/email-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
   &--email::placeholder {
     color: rgba(0, 0, 0, 0.3);
+  }
+
+  &[type="radio"]::after {
+    position: absolute;
+    content: "";
+    top: -16px;
+    left: 0;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+  }
+
+  &[type="radio"]:checked::before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    top: -2px;
+    left: 15px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color:#333333;
+  }
+
+  &[type="checkbox"]::after {
+    position: absolute;
+    content: "";
+    top: -15px;
+    left: 0;
+    width: 46px;
+    height: 46px;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+  }
+
+  &[type="checkbox"]:checked::after {
+    background-image: url("../../img/checkbox-icon.svg");
   }
 }
 
@@ -49,35 +131,112 @@
   font-size: 18px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.3);
+  border: 0;
+  background-color: #f2f2f2;
+  min-height: 150px;
+  padding: 16px;
+  resize: none;
 }
 
 .form__footnote {
+  display: block;
+  text-align: right;
+  margin: 0 20px;
   color: rgba(51, 51, 51, 0.6);
   font-size: 12px;
   text-transform: uppercase;
 }
 
+.form__button {
+  margin: 33px 20px 0;
+  width: 90%;
+  padding: 18px 33px 14px;
+}
+
 @media (min-width: @tablet-width) {
+
   .form__wrap {
     display: flex;
     justify-content: space-between;
+    margin: 0 60px 47px;
+  }
+
+  .form__intro {
+    padding: 0;
+    margin-bottom: 28px;
+    font-size: 21px;
   }
 
   .form__impression-wrap {
     display: flex;
     flex-wrap: wrap;
+    padding: 28px 37px 48px;
+    justify-content: space-between;
   }
 
   .form__sight-wrap {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 84px 42px;
+    justify-content: space-between;
+  }
+
+  .form__fieldset {
+    padding: 0;
+    border: none;
+    margin: 0 60px;
+  }
+
+  .form__fieldset--enter {
+    margin: 0;
+    width: 43%;
   }
 
   .form__field-sight-wrap {
-    width: 300px;
+    width: 47%;
   }
 
   .form__field-impression-wrap {
-    width: 300px;
+    width: 48%;
+    margin: 0 0 16px;
+    padding: 10px 0;
+  }
+
+  .form__label {
+    padding: 0;
+  }
+
+  .form__intro--sight {
+    width: 50%;
+  }
+
+  .form__button-wrap {
+    display: flex;
+    margin: 48px 60px 100px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form__button {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .form__wrap {
+    margin: 0 120px 55px;
+  }
+
+  .form__impression-wrap {
+    padding: 17px 53px;
+    margin: 0 60px 56px;
+  }
+
+  .form__field-impression-wrap {
+    width: 30%;
+    margin: 0 0 16px;
+    padding: 10px 0;
   }
 }

@@ -1,5 +1,9 @@
+.additional-header {
+ border-bottom: 1px solid #e5e5e5;
+}
+
 .additional-header__title {
-  margin: 0;
+  margin: 0 20px 25px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -7,7 +11,32 @@
 }
 
 .additional-header__description {
-  margin: 0;
+  margin: 0 20px 17px;
   color: #333333;
   text-transform: uppercase;
+}
+
+@media(min-width: @tablet-width) {
+  .additional-header {
+    border: none;
+   }
+
+   .additional-header__title {
+    font-size: 30px;
+    margin: 0 166px 25px;
+   }
+
+   .additional-header__description {
+    margin: 0 155px 86px;
+   }
+}
+
+@media(min-width: @desktop-width) {
+    .additional-header__title {
+    margin: 100px 371px 25px;
+   }
+
+   .additional-header__description {
+    margin: 0 371px 86px;
+   }
 }
