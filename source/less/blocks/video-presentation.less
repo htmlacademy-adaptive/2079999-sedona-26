@@ -23,3 +23,30 @@
   height: 100%;
   vertical-align: bottom;
 }
+
+@media(min-width: @tablet-width) {
+  .video-presentation__title {
+    padding: 0;
+    margin: 58px 162px 0;
+    font-size: 30px;
+  }
+
+  .video-presentation__description {
+    padding: 0;
+    margin: 25px 162px 70px;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .video-presentation {
+    margin: 0 200px 84px;
+  }
+
+  .video-presentation__title {
+    margin: 66px 178px;
+  }
+
+  .video-presentation__description {
+    margin: 25px 178px 70px;
+  }
+}

@@ -154,26 +154,89 @@
 }
 
 @media (min-width: @tablet-width) {
+
   .form__wrap {
     display: flex;
     justify-content: space-between;
+    margin: 0 60px 47px;
+  }
+
+  .form__intro {
+    padding: 0;
+    margin-bottom: 28px;
+    font-size: 21px;
   }
 
   .form__impression-wrap {
     display: flex;
     flex-wrap: wrap;
+    padding: 28px 37px 48px;
+    justify-content: space-between;
   }
 
   .form__sight-wrap {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 84px 42px;
+    justify-content: space-between;
+  }
+
+  .form__fieldset {
+    padding: 0;
+    border: none;
+    margin: 0 60px;
+  }
+
+  .form__fieldset--enter {
+    margin: 0;
+    width: 43%;
   }
 
   .form__field-sight-wrap {
-    width: 300px;
+    width: 47%;
   }
 
   .form__field-impression-wrap {
-    width: 300px;
+    width: 48%;
+    margin: 0 0 16px;
+    padding: 10px 0;
+  }
+
+  .form__label {
+    padding: 0;
+  }
+
+  .form__intro--sight {
+    width: 50%;
+  }
+
+  .form__button-wrap {
+    display: flex;
+    margin: 48px 60px 100px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form__button {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .form__wrap {
+    margin: 0 120px 55px;
+  }
+
+  .form__impression-wrap {
+    padding: 17px 53px;
+    margin: 0 60px 56px;
+  }
+
+  .form__field-impression-wrap {
+    width: 30%;
+    margin: 0 0 16px;
+    padding: 10px 0;
   }
 }

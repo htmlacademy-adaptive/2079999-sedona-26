@@ -42,7 +42,7 @@
       <section class="feedback-section">
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="form__wrap">
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset form__fieldset--enter">
               <legend class="form__intro">Представьтесь:</legend>
               <div class="form__field-wrap">
                 <label class="form__field-description" for="name">Имя*:</label>
@@ -57,7 +57,7 @@
                 <input class="form__field" type="text" name="patronymic" id="patronymic" placeholder="Викторович">
               </div>
             </fieldset>
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset form__fieldset--enter">
               <legend class="form__intro">Контактная информация:</legend>
               <div class="form__field-wrap">
                 <label class="form__field-description" for="phone">Контактный телефон*:</label>
@@ -87,7 +87,7 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="form__intro">Посещенные достопримечательности:</legend>
+            <legend class="form__intro form__intro--sight">Посещенные достопримечательности:</legend>
             <div class="form__sight-wrap">
               <div class="form__field-sight-wrap">
                 <input class="form__field" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
@@ -111,8 +111,10 @@
             <legend class="form__intro">Опишите свои эмоции:</legend>
             <textarea class="form__text" name="emotions">Опишите подробно все свои восторги</textarea>
           </fieldset>
-          <button class="form__button button" type="submit">Отправить отзыв</button>
-          <span class="form__footnote footnote">* — обязательные поля</span>
+          <div class="form__button-wrap">
+            <button class="form__button button" type="submit">Отправить отзыв</button>
+            <span class="form__footnote footnote">* — обязательные поля</span>
+          </div>
         </form>
       </section>
     </main>
