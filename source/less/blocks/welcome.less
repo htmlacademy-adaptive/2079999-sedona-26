@@ -1,4 +1,5 @@
 .welcome__wrap {
+  position: relative;
   background-color: #3f5e72;
   background-image: url("../img/welcome-mountains-mobile.jpg");
   background-repeat: no-repeat;
@@ -6,11 +7,18 @@
 
   &::after {
     content: "";
+    position: absolute;
     display: block;
+    bottom: 0;
+    width: 100%;
     min-height: 57px;
     background-image: url("../img/welcome-divider.svg");
     background-repeat: no-repeat;
     background-size: 100% 57px;
+  }
+
+  @media(min-resolution: 2dppx) {
+    background-image: url("../img/welcome-mountains-mobile@2x.jpg");
   }
 }
 
@@ -36,10 +44,29 @@
   .welcome__image {
     width: 461px;
     height: 350px;
+    padding: 77px 0 91px;
   }
 
   .welcome__description {
     margin: 0;
     padding: 48px 124px 28px;
+  }
+}
+
+@media (min-width: @tablet-width) and (min-resolution: 2dppx) {
+  .welcome__wrap {
+    background-image: url("../img/welcome-mountains-tablet@2x.jpg");
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .welcome__wrap {
+    background-image: url("../img/welcome-mountains-desktop.jpg");
+  }
+}
+
+@media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+  .welcome__wrap {
+    background-image: url("../img/welcome-mountains-desktop@2x.jpg");
   }
 }
