@@ -1,21 +1,27 @@
 .secondary-logo {
+  position: relative;
   min-height: 158px;
   margin-bottom: 37px;
   background-color: #3f5e72;
-  background-image: url("../img/secondary-welcome-mountains.jpg");
+  background-image: url("../img/secondary-welcome-mountains-mobile.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
 
   &::after {
     content: "";
+    position: absolute;
     display: block;
-    margin-top: auto;
+    bottom: 0;
+    width: 100%;
     min-height: 57px;
     background-image: url("../img/welcome-divider.svg");
     background-repeat: no-repeat;
     background-size: 100% 57px;
-    background-position: bottom;
+  }
+
+  @media(min-resolution: 2dppx) {
+    background-image: url("../img/secondary-welcome-mountains-mobile@2x.jpg");
   }
 }
 
@@ -34,5 +40,23 @@
     margin: 95px 0 60px;
     width: 457px;
     height: 78px;
+  }
+}
+
+@media (min-width: @tablet-width) and (min-resolution: 2dppx) {
+  .secondary-logo {
+    background-image: url("../img/secondary-welcome-mountains-tablet@2x.jpg");
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .secondary-logo {
+    background-image: url("../img/secondary-welcome-mountains-desktop.jpg");
+  }
+}
+
+@media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+  .secondary-logo {
+    background-image: url("../img/secondary-welcome-mountains-desktop@2x.jpg");
   }
 }

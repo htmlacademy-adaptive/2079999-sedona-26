@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="container">
     <header class="header">
@@ -49,7 +53,11 @@
               <span class="advantages__num">— №1 —</span>
               <p class="advantages__description">Седона — не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img class="advantages__image" src="img/sedona-street.jpg" width="320" height="260" alt="Улица городка Седона.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/sedona-street-desktop.jpg 1x, img/sedona-street-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/sedona-street-tablet.jpg 1x, img/sedona-street-tablet@2x.jpg 2x">
+              <img class="advantages__image" src="img/sedona-street-mobile.jpg" srcset="img/sedona-street-mobile@2x.jpg 2x" width="320" height="260" alt="Улица городка Седона.">
+            </picture>
           </li>
           <li class="advantages__item infrastructure">
             <ul class="infrastructure__list">
@@ -73,7 +81,11 @@
               <span class="advantages__num">— №2 —</span>
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
-            <img class="advantages__image" src="img/devil-bridge.jpg" width="320" height="260" alt="Мост дьявола.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/devil-bridge-desktop.jpg 1x, img/devil-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/devil-bridge-tablet.jpg 1x, img/devil-bridge-tablet@2x.jpg 2x">
+              <img class="advantages__image" src="img/devil-bridge-mobile.jpg" srcset="img/devil-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола.">
+            </picture>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Небольшая площадь</h3>

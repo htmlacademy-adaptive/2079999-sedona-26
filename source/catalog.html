@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body class="container">
     <header class="header">
@@ -42,7 +43,11 @@
       <section class="photos">
         <figure class="photos__card photos__card--main-slide">
           <a class="photos__link" target="_blank" href="img/road-to-sunset.jpg">
-            <img class="photos__image" src="img/road-to-sunset.jpg" width="280" height="280" alt="Дорога и закат.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/road-to-sunset-desktop.jpg 1x, img/road-to-sunset-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/road-to-sunset-tablet.jpg 1x, img/road-to-sunset-tablet@2x.jpg 2x">
+              <img class="photos__image" src="img/road-to-sunset-mobile.jpg" srcset="img/road-to-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога и закат.">
+            </picture>
           </a>
           <div class="photos__wrapper">
             <div>
@@ -61,7 +66,11 @@
         </figure>
         <figure class="photos__card">
           <a class="photos__link" target="_blank" href="img/sedona-plants.jpg">
-            <img class="photos__image" src="img/sedona-plants.jpg" width="280" height="280" alt="Фото кактуса.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/sedona-plants-desktop.jpg 1x, img/sedona-plants-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/sedona-plants-tablet.jpg 1x, img/sedona-plants-tablet@2x.jpg 2x">
+              <img class="photos__image" src="img/sedona-plants-mobile.jpg" srcset="img/sedona-plants-mobile@2x.jpg 2x" width="280" height="280" alt="Фото кактуса.">
+            </picture>
           </a>
           <div class="photos__wrapper">
             <div>
@@ -80,7 +89,11 @@
         </figure>
         <figure class="photos__card">
           <a class="photos__link" target="_blank" href="img/road-in-forest.jpg">
-            <img class="photos__image" src="img/road-in-forest.jpg" width="280" height="280" alt="Автомобильная дорога в лесу.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/road-in-forest-desktop.jpg 1x, img/road-in-forest-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/road-in-forest-tablet.jpg 1x, img/road-in-forest-tablet@2x.jpg 2x">
+              <img class="photos__image" src="img/road-in-forest-mobile.jpg" srcset="img/road-in-forest-mobile@2x.jpg 2x" width="280" height="280" alt="Автомобильная дорога в лесу.">
+            </picture>
           </a>
           <div class="photos__wrapper photos__wrapper--contrast">
             <div>
@@ -99,7 +112,11 @@
         </figure>
         <figure class="photos__card">
           <a class="photos__link" target="_blank" href="img/devil-bridge.jpg">
-            <img class="photos__image" src="img/devil-bridge.jpg" width="280" height="280" alt="Мост Дьявола.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/devil-bridge-desktop_catalog.jpg 1x, img/devil-bridge-desktop_catalog@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/devil-bridge-tablet_catalog.jpg 1x, img/devil-bridge-tablet_catalog@2x.jpg 2x">
+              <img class="photos__image" src="img/devil-bridge-mobile_catalog.jpg" srcset="img/devil-bridge-mobile_catalog@2x.jpg 2x" width="280" height="280" alt="Мост Дьявола.">
+            </picture>
           </a>
           <div class="photos__wrapper">
             <div>
