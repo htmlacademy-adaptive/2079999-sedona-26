@@ -35,7 +35,7 @@
   border: none;
   padding: 0;
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
 
   &--liked svg {
     fill: rgb(255, 0, 0);
@@ -103,8 +103,9 @@
 
   .photos__wrapper {
     position: absolute;
+    left: 0;
+    right:0;
     bottom: 0;
-    width: 90%;
     background-color: rgba(0, 0, 0, 0.3);
 
   }
@@ -113,5 +114,10 @@
   .photos__author,
   .photos__like-count {
     color: #ffffff;
+  }
+
+  .photos__like-button svg {
+    fill: #ffffff;
+    opacity: 1;
   }
 }
