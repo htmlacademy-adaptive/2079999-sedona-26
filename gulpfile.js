@@ -53,7 +53,6 @@ export const copy = () => {
     "source/fonts/*.{woff,woff2}",
     "source/img/favicons/*",
     "source/*.ico",
-    "source/img/*.{jpg,png,svg}",
 ], {
   base: "source"
 })
@@ -68,6 +67,13 @@ export const images = () => {
   .pipe(gulp.dest('build/img'))
 }
 
+//SVG
+
+export const svg = () => {
+  return gulp.src('source/img/*.svg')
+  .pipe(svgo())
+  .pipe(gulp.dest('build/img'))
+}
 
 // Sprite
 
@@ -92,6 +98,14 @@ export const html = () => {
 
 // WebP
 
+export const webp = () => {
+  return gulp.src('source/img/*.{jpg,png}')
+  .pipe(squoosh({
+    webp:{}
+  }))
+  .pipe(gulp.dest('build/img'))
+}
+
 // Clean
 
 export const clean = () => {
@@ -106,6 +120,35 @@ export const scripts = () => {
   .pipe(gulp.dest('build/js'))
 }
 
+export const build = gulp.series(
+  clean,
+  copy,
+  gulp.parallel(
+    styles,
+    scripts,
+    images,
+    svg,
+    sprite,
+    html,
+    webp
+  )
+)
+
 export default gulp.series(
-  clean, styles, copy, sprite, html, scripts, server, watcher
-);
+  clean,
+  copy,
+  gulp.parallel(
+    styles,
+    scripts,
+    images,
+    svg,
+    sprite,
+    html,
+    webp
+  ),
+  gulp.series(
+    server,
+    watcher
+  )
+)
+

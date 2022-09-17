@@ -30,14 +30,16 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "lint": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
+    "build": "gulp build",
     "start": "npx gulp",
     "copy": "gulp copy",
     "sprite": "gulp sprite",
     "html": "gulp html",
     "clean": "gulp clean",
     "scripts": "gulp scripts",
-    "images": "gulp images"
+    "images": "gulp images",
+    "svg": "gulp svg",
+    "webp": "gulp webp"
   },
   "browserslist": [
     "last 2 versions",
