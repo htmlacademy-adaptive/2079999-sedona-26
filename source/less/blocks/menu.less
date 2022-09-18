@@ -43,10 +43,6 @@
   &:active {
     background-color: #5496bd;
   }
-
-  &:active .menu__link{
-    color: rgba(255, 255, 255, 0.3);
-  }
 }
 
 .menu__link {
@@ -59,6 +55,10 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -73,10 +73,19 @@
   .menu__list {
     display: grid;
     grid-template-columns: 1fr 1fr 185px 1fr 1fr;
+    background-color: #ffffff;
 
     & li:nth-child(3) {
       grid-column: 4 / 5;
     }
+
+    & li:last-child {
+      background-image: none;
+    }
+  }
+
+  .menu__item {
+    border: none;
   }
 
   .menu__link {
@@ -84,5 +93,18 @@
     font-size: 14px;
     line-height: 21px;
     color: #000000;
+
+    &--current {
+      color: #766357;
+    }
+
+    &:hover {
+      background-color: #ffffff;
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 }

@@ -15,15 +15,12 @@
 
 .modal {
   position: relative;
+  width: 100%;
   margin: auto;
   background-color: #ffffff;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 
-  &--ok-close {
-    display: none;
-  }
-
-  &--error-close {
+  &--close {
     display: none;
   }
 }
@@ -45,4 +42,56 @@
 .modal__button {
   margin: 0 auto 35px;
   padding: 16px 62px;
+  width: 56%;
+}
+
+.modal__button-wrap {
+  padding: 20px;
+  background-color: #f2f2f2;
+
+  & .modal__button {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.modal--ok {
+  & .modal__description {
+    margin-bottom: 46px;
+  }
+}
+
+@media(min-width: @tablet-width) {
+    .modal--error {
+      width: 400px;
+
+    & .modal__button {
+      width: 272px;
+    }
+
+    & .modal__title {
+      margin-top: 54px;
+    }
+  }
+
+    .modal--ok {
+      width: 640px;
+
+    & .modal__button {
+      width: 458px;
+    }
+
+    & .modal__description {
+      margin-left: 98px;
+      margin-right: 98px;
+    }
+  }
+
+  .modal__button-wrap {
+    padding: 44px 91px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+  }
 }

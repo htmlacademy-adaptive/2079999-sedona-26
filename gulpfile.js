@@ -82,7 +82,7 @@ export const sprite = () => {
 
     .pipe(svgo())
     .pipe(svgstore({
-      inlineSvg: true,
+      inlineSvg: true
       }
     ))
     .pipe(rename('sprite.svg'))
