@@ -11,7 +11,7 @@
 }
 
 .additional-header__description {
-  margin: 0 20px 17px;
+  margin: 0 20px 37px;
   color: #333333;
   text-transform: uppercase;
 }
@@ -23,20 +23,34 @@
 
    .additional-header__title {
     font-size: 30px;
-    margin: 0 166px 25px;
+    margin: 0 166px 34px;
+   }
+
+   .additional-header--feedback .additional-header__title {
+    margin: 0 166px 22px;
    }
 
    .additional-header__description {
-    margin: 0 155px 86px;
+    margin: 0 165px 80px;
    }
 }
 
 @media(min-width: @desktop-width) {
     .additional-header__title {
-    margin: 100px 371px 25px;
+      margin: 100px 371px 31px;
    }
 
+   .additional-header--feedback {
+      & .additional-header__title {
+      margin: 114px 166px 33px;
+    }
+
+    & .additional-header__description {
+      margin: 0 378px 69px;
+    }
+  }
+
    .additional-header__description {
-    margin: 0 371px 86px;
+    margin: 0 378px 88px;
    }
 }

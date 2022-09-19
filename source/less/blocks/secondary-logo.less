@@ -9,15 +9,16 @@
   background-size: cover;
 
   &::after {
-    content: "";
-    position: absolute;
     display: block;
     bottom: 0;
     width: 100%;
+    position: absolute;
     min-height: 57px;
+    content: "";
     background-image: url("../img/welcome-divider.svg");
     background-repeat: no-repeat;
-    background-size: 100% 57px;
+    background-position: center bottom;
+    background-size: cover;
   }
 
   @media(min-resolution: 2dppx) {
@@ -33,7 +34,7 @@
   .secondary-logo {
     min-height: 290px;
     background-image: url("../img/secondary-welcome-mountains-tablet.jpg");
-    margin-bottom: 61px;
+    margin-bottom: 65px;
   }
 
   .secondary-logo__image {
@@ -52,6 +53,10 @@
 @media(min-width: @desktop-width) {
   .secondary-logo {
     background-image: url("../img/secondary-welcome-mountains-desktop.jpg");
+    min-height: 300px;
+  }
+  .secondary-logo__image {
+    margin: 102px 0px 60px;
   }
 }
 

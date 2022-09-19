@@ -6,15 +6,16 @@
   background-size: cover;
 
   &::after {
-    content: "";
-    position: absolute;
     display: block;
     bottom: 0;
     width: 100%;
+    position: absolute;
     min-height: 57px;
+    content: "";
     background-image: url("../img/welcome-divider.svg");
     background-repeat: no-repeat;
-    background-size: 100% 57px;
+    background-position: center bottom;
+    background-size: cover;
   }
 
   @media(min-resolution: 2dppx) {
@@ -23,8 +24,8 @@
 }
 
 .welcome__description {
-  margin: 0 18px;
-  padding: 18px 0 35px 0;
+  margin: 0 26px;
+  padding: 34px 4px 35px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -50,6 +51,7 @@
   .welcome__description {
     margin: 0;
     padding: 48px 124px 28px;
+    font-size: 21px;
   }
 }
 
@@ -60,6 +62,11 @@
 }
 
 @media(min-width: @desktop-width) {
+  .welcome__description {
+    margin: 0;
+    padding: 61px 318px 28px;
+  }
+
   .welcome__wrap {
     background-image: url("../img/welcome-mountains-desktop.jpg");
   }

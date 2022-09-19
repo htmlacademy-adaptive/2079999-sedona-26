@@ -36,7 +36,7 @@
       </nav>
     </header>
     <main class="main">
-      <header class="additional-header">
+      <header class="additional-header additional-header--feedback">
         <div class="secondary-logo">
           <img class="secondary-logo__image" src="img/secondary-logo.svg" width="229" height="39" alt="Логотип города Седона.">
         </div>
@@ -46,7 +46,7 @@
       <section class="feedback-section">
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="form__wrap">
-            <fieldset class="form__fieldset form__fieldset--enter">
+            <fieldset class="form__fieldset form__fieldset--welcome">
               <legend class="form__intro">Представьтесь:</legend>
               <div class="form__field-wrap">
                 <label class="form__field-description" for="name">Имя*:</label>
@@ -61,7 +61,7 @@
                 <input class="form__field" type="text" name="patronymic" id="patronymic" placeholder="Викторович">
               </div>
             </fieldset>
-            <fieldset class="form__fieldset form__fieldset--enter">
+            <fieldset class="form__fieldset form__fieldset--info">
               <legend class="form__intro">Контактная информация:</legend>
               <div class="form__field-wrap">
                 <label class="form__field-description" for="phone">Контактный телефон*:</label>
@@ -74,7 +74,7 @@
             </fieldset>
           </div>
           <fieldset class="form__fieldset">
-            <legend class="form__intro">Ваше общее впечатление:</legend>
+            <legend class="form__intro form__intro--impression">Ваше общее впечатление:</legend>
             <div class="form__impression-wrap">
               <div class="form__field-impression-wrap">
                 <input class="form__field" type="radio" name="impression-group" value="positive" id="positive" checked>
@@ -111,8 +111,8 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__intro">Опишите свои эмоции:</legend>
+          <fieldset class="form__fieldset form__fieldset--textarea">
+            <legend class="form__intro form__intro--emotions">Опишите свои эмоции:</legend>
             <textarea class="form__text" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="form__button-wrap">
@@ -156,7 +156,7 @@
         </a>
       </div>
     </footer>
-    <div class="modal-container"> <!-- Класс для закрытия контейнера: modal-container--close -->
+    <div class="modal-container modal-container--close"> <!-- Класс для закрытия контейнера: modal-container--close -->
       <div class="modal modal--error modal--close"> <!-- Класс для закрытия окна: modal--close -->
         <h2 class="visually-hidden">Сообщение об ошибке</h2>
         <p class="modal__title">Что-то пошло не&nbsp;так!</p>
