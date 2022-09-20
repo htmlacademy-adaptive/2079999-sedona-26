@@ -11,14 +11,14 @@
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="container">
-    <header class="header">
+    <header class="header header--nojs">
       <a class="header__logo logo" href="index.html">
         <img class="logo__image" src="img/main-logo.svg" width="185" height="96" alt="Логотип сайта">
       </a>
-      <button class="header__button" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
       <nav class="menu">
+        <button class="header__button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
         <ul class="menu__list menu__list--close">
           <li class="menu__item">
             <a class="menu__link" href="index.html">Главная</a>
@@ -27,16 +27,16 @@
             <a class="menu__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="form.html">Форма Отзыва</a>
+            <a class="menu__link menu__link--current" href="form.html">Форма Отзыва</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
           </li>
         </ul>
       </nav>
-    </head>
+    </header>
     <main class="main">
-      <header class="additional-header">
+      <header class="additional-header additional-header--feedback">
         <div class="secondary-logo">
           <img class="secondary-logo__image" src="img/secondary-logo.svg" width="229" height="39" alt="Логотип города Седона.">
         </div>
@@ -46,7 +46,7 @@
       <section class="feedback-section">
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="form__wrap">
-            <fieldset class="form__fieldset form__fieldset--enter">
+            <fieldset class="form__fieldset form__fieldset--welcome">
               <legend class="form__intro">Представьтесь:</legend>
               <div class="form__field-wrap">
                 <label class="form__field-description" for="name">Имя*:</label>
@@ -61,7 +61,7 @@
                 <input class="form__field" type="text" name="patronymic" id="patronymic" placeholder="Викторович">
               </div>
             </fieldset>
-            <fieldset class="form__fieldset form__fieldset--enter">
+            <fieldset class="form__fieldset form__fieldset--info">
               <legend class="form__intro">Контактная информация:</legend>
               <div class="form__field-wrap">
                 <label class="form__field-description" for="phone">Контактный телефон*:</label>
@@ -74,7 +74,7 @@
             </fieldset>
           </div>
           <fieldset class="form__fieldset">
-            <legend class="form__intro">Ваше общее впечатление:</legend>
+            <legend class="form__intro form__intro--impression">Ваше общее впечатление:</legend>
             <div class="form__impression-wrap">
               <div class="form__field-impression-wrap">
                 <input class="form__field" type="radio" name="impression-group" value="positive" id="positive" checked>
@@ -103,7 +103,7 @@
               </div>
               <div class="form__field-sight-wrap">
                 <input class="form__field" type="checkbox" name="slide-park" id="slide-park" checked>
-                <label class="form__label" for="slide-park">Слайд-парк</label>
+                <label class="form__label" for="slide-park">Слайд-парк   </label>
               </div>
               <div class="form__field-sight-wrap">
                 <input class="form__field" type="checkbox" name="red-rocks" id="red-rocks">
@@ -111,9 +111,9 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__intro">Опишите свои эмоции:</legend>
-            <textarea class="form__text" name="emotions">Опишите подробно все свои восторги</textarea>
+          <fieldset class="form__fieldset form__fieldset--textarea">
+            <legend class="form__intro form__intro--emotions">Опишите свои эмоции:</legend>
+            <textarea class="form__text" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="form__button-wrap">
             <button class="form__button button" type="submit">Отправить отзыв</button>
@@ -128,44 +128,48 @@
         <h2 class="visually-hidden">Ссылки на социальные сети</h2>
         <a class="social__link button" href="https://vk.com/htmlacademy" aria-label="Группа Вконтаке HTML Academy.">
           <span class="visually-hidden">ВКонтакте</span>
-          <svg class="social__icon" width="24" height="24" fill="#ffffff">
+          <svg class="social__icon" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
             <use xlink:href="img/sprite.svg#vk"></use>
           </svg>
         </a>
         <a class="social__link button" href="https://t.me/htmlacademy" aria-label="Telegram-чат HTML Academy.">
           <span class="visually-hidden">Telegram</span>
-          <svg width="24" height="24" fill="#ffffff">
+          <svg class="social__icon" width="24" height="24" fill="#ffffff">
             <use xlink:href="img/sprite.svg#telegram"></use>
           </svg>
         </a>
         <a class="social__link button" href="https://www.youtube.com/user/htmlacademyru" aria-label="Youtube-канал HTML Academy.">
           <span class="visually-hidden">Youtube</span>
-          <svg width="24" height="24" fill="#ffffff">
+          <svg class="social__icon" width="24" height="24" fill="#ffffff">
             <use xlink:href="img/sprite.svg#youtube"></use>
           </svg>
         </a>
       </section>
       <div class="stamp">
         <a class="stamp__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
-          <p class="stamp__description">Разработано</p>
-          <svg class="stamp__icon" width="27" height="34">
-            <use xlink:href="img/sprite.svg#stamp"></use>
-          </svg>
+          <div class="stamp__wrap">
+            <p class="stamp__description">Разработано</p>
+            <svg class="stamp__icon" width="27" height="34">
+              <use xlink:href="img/sprite.svg#stamp"></use>
+            </svg>
+          </div>
         </a>
       </div>
     </footer>
-    <div class="modal-container modal-container--close">
-      <div class="modal modal--error-close">
+    <div class="modal-container"> <!-- Класс для закрытия контейнера: modal-container--close -->
+      <div class="modal modal--error modal--close"> <!-- Класс для закрытия окна: modal--close -->
         <h2 class="visually-hidden">Сообщение об ошибке</h2>
-        <p class="modal__title">Что-то пошло не так!</p>
-        <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <p class="modal__title">Что-то пошло не&nbsp;так!</p>
+        <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли&nbsp;их заполнить</p>
         <button class="modal__button button" type="button">Ок</button>
       </div>
-      <div class="modal modal--ok-close">
+      <div class="modal modal--ok"> <!-- Класс для закрытия окна: modal--close -->
         <h2 class="visually-hidden">Сообщение об успешной отправке</h2>
         <p class="modal__title">Ваш отзыв отправлен!</p>
-        <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="modal__button button" type="button">Закрыть окно</button>
+        <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+        <div class="modal__button-wrap">
+          <button class="modal__button button" type="button">Закрыть окно</button>
+        </div>
       </div>
     </div>
     <script src="js/script.js"></script>

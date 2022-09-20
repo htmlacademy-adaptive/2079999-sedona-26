@@ -2,6 +2,27 @@
   min-height: 56px;
 }
 
+.header--nojs {
+  position: relative;
+
+  & .menu {
+    position: static;
+    margin-bottom: 56px;
+  }
+
+  & .header__button {
+    display: none;
+  }
+
+  & .menu__list--close {
+    display: block;
+  }
+
+  & .logo {
+    bottom: -102px;
+  }
+}
+
 .header__logo {
   position: relative;
 }
@@ -25,11 +46,19 @@
     background-color: #81b3d2;
     box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .header__button--close {
   position: absolute;
-  top: 0;
+  top: -1px;
   right: 0;
   z-index: 4;
   background-color: #81b3d2;

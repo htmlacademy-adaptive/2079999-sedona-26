@@ -12,17 +12,17 @@
   background-size: 40px 40px;
   background-position: 18px 22px;
 
-
   &--accommodation {
-    background-image: url(../img/accomodation-icon.svg);
+    background-image: url("../img/accomodation-icon.svg");
   }
 
   &--eat {
-    background-image: url(../img/burger-icon.svg);
+    background-image: url("../img/burger-icon.svg");
   }
 
   &--souvenirs {
-    background-image: url(../img/gift-icon.svg);
+    background-image: url("../img/gift-icon.svg");
+    padding-bottom: 50px;
   }
 }
 
@@ -42,11 +42,12 @@
   text-transform: uppercase;
 }
 
-.infrastructure__item--souvenirs {
-  padding-bottom: 52px;
-}
+@media (min-width: @tablet-width) {
+  .infrastructure__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-@media(min-width: @tablet-width) {
   .infrastructure__item {
     padding: 158px 0 59px;
     text-align: center;
@@ -58,10 +59,31 @@
   .infrastructure__title {
     padding: 0;
     margin: 0 36px 23px;
+    font-size: 21px;
   }
 
   .infrastructure__description {
     margin: 0 36px;
     padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .infrastructure__title {
+    margin-bottom: 20px;
+  }
+
+  .infrastructure__description {
+    margin: 0 51px;
+  }
+
+  .infrastructure__item--souvenirs {
+    & .infrastructure__description {
+      padding: 0 52px;
+    }
+  }
+
+  .infrastructure__item {
+    padding-bottom: 78px;
   }
 }

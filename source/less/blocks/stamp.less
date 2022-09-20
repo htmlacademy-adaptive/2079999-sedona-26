@@ -1,14 +1,31 @@
-.stamp {
-
-}
-
 .stamp__link {
   text-decoration: none;
-  display: flex;
+  margin: 40px 0 23px;
+}
+
+.stamp__wrap {
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
-  padding: 40px 0 23px;
+  padding: 20px;
+  margin-top: 20px;
+
+  &:hover p {
+    color: #81b3d2;
+  }
+
+  &:hover svg {
+    fill: #81b3d2;
+  }
+
+  &:active p {
+    color: #b3b3b3;
+  }
+
+  &:active svg {
+    fill: #b3b3b3;
+  }
 }
 
 .stamp__description {
@@ -19,7 +36,11 @@
 
 @media (min-width: @tablet-width) {
   .stamp__link {
-  padding: 0;
+    padding: 0;
+  }
+
+  .stamp__wrap {
+    margin: 0;
   }
 }
 

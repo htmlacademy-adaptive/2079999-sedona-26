@@ -1,7 +1,8 @@
 let menuList = document.querySelector('.menu__list');
 let headerButton = document.querySelector('.header__button');
+let header = document.querySelector('.header');
 
-// navMain.classList.remove('main-nav--nojs');
+header.classList.remove('header--nojs');
 
 headerButton.addEventListener('click', function () {
    if (menuList.classList.contains('menu__list--close')) {
