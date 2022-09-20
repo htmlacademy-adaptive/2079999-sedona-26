@@ -152,4 +152,3 @@ export default gulp.series(
     watcher
   )
 )
-
