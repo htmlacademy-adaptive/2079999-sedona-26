@@ -50,7 +50,6 @@
 }
 
 .form__field-sight-wrap {
-
   & label {
     padding-left: 38px;
   }
@@ -70,23 +69,22 @@
   border: none;
   background-color: #f2f2f2;
 
-    &::placeholder {
-      color: #000000;
-    }
+  &::placeholder {
+    color: #000000;
+  }
 
-    &:hover {
-      background-color: #e5e5e5;
-    }
+  &:hover {
+    background-color: #e5e5e5;
+  }
 
-    &:active {
-      background-color: #ffffff;
-      outline: 4px solid #e5e5e5;
-    }
+  &:active {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+  }
 
-    &:focus {
-      outline: 4px solid #e5e5e5;
-    }
-
+  &:focus {
+    outline: 4px solid #e5e5e5;
+  }
 
   &--phone {
     padding-right: 75px;
@@ -144,7 +142,7 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color:#333333;
+    background-color: #333333;
   }
 
   &[type="checkbox"]::after {
@@ -234,7 +232,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .form__wrap {
     display: flex;
     justify-content: space-between;
@@ -309,9 +306,6 @@
 
   .form__intro--sight {
     margin-bottom: 0;
-  }
-
-  .form__intro--sight {
     width: 50%;
   }
 
@@ -332,7 +326,7 @@
     font-size: 14px;
     line-height: 21px;
     opacity: 1;
-    padding: 9px 0px 0px 0px;
+    padding-top: 9px;
     margin: 0;
   }
 }
@@ -358,6 +352,126 @@
     background-color: #dbdbdb;
   }
 }
+
+.form__intro--sight::after {
+  left: -161px;
+  top: 24px;
+}
+
+.form__intro--emotions::after {
+  left: -200px;
+  top: 40px;
+}
+
+.form__intro--impression::after {
+  left: -183px;
+  top: 8px;
+}
+
+.form__intro--sight::before {
+  right: -161px;
+  top: 24px;
+}
+
+.form__intro--emotions::before {
+  right: -200px;
+  top: 40px;
+}
+
+.form__intro--impression::before {
+  right: -183px;
+  top: 8px;
+}
+
+@media (min-width: @desktop-width) {
+  .form__wrap {
+    margin: 0 120px 55px;
+  }
+
+  .form__impression-wrap {
+    padding: 0;
+    margin: 27px 85px 83px 113px;
+  }
+
+  .form__sight-wrap {
+    justify-content: space-around;
+    margin: 33px 54px 69px 109px;
+  }
+
+  .form__field-impression-wrap {
+    width: 30%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form__field-sight-wrap {
+    width: 25%;
+  }
+
+  .form__fieldset--welcome {
+    & .form__field {
+      min-width: 395px;
+    }
+
+    & legend {
+      padding-left: 66px;
+    }
+  }
+
+  .form__fieldset--info {
+    min-width: 466px;
+  }
+
+  .form__fieldset--info .form__field-wrap {
+    margin-left: 64px;
+  }
+
+  .form__field--phone,
+  .form__field--email {
+    width: 77%;
+  }
+
+  .form__intro--sight {
+    width: 400px;
+  }
+
+  .form__text {
+    margin: 0 156px;
+  }
+
+  .form__button {
+    width: 36%;
+    margin-left: 155px;
+  }
+
+  .form__footnote {
+    margin-right: 156px;
+  }
+
+  .form__button-wrap {
+    margin: 58px 60px 88px;
+  }
+
+  .form__intro--sight,
+  .form__intro--emotions,
+  .form__intro--impression {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+  }
+
   .form__intro--sight::after {
     left: -161px;
     top: 24px;
@@ -386,40 +500,5 @@
   .form__intro--impression::before {
     right: -183px;
     top: 8px;
-  }
-
-
-@media (min-width: @desktop-width) {
-
-  .form__wrap {
-    margin: 0 120px 55px;
-  }
-
-  .form__impression-wrap {
-    padding: 17px 53px;
-    margin: 0 60px 56px;
-  }
-
-  .form__field-impression-wrap {
-    width: 30%;
-    margin: 0 0 16px;
-    padding: 10px 0;
-  }
-
-  .form__fieldset--welcome legend {
-    padding-left: 80px;
-  }
-
-  .form__fieldset--info{
-    min-width: 466px;
-  }
-
-  .form__fieldset--info .form__field-wrap {
-    margin-left: 64px;
-  }
-
-  .form__field--phone,
-  .form__field--email {
-    width: 77%;
   }
 }
