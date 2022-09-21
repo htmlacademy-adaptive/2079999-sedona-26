@@ -129,6 +129,10 @@
     background-color: #d5d5d5;
   }
 
+  &[type="radio"]:focus::after {
+    outline: 4px solid #e5e5e5;
+  }
+
   &[type="radio"]:active::before {
     opacity: 0.3;
   }
@@ -166,6 +170,10 @@
 
   &[type="checkbox"]:active::after {
     background-color: #d5d5d5;
+  }
+
+  &[type="checkbox"]:focus::after {
+    outline: 4px solid #e5e5e5;
   }
 
   &[type="checkbox"]:active::before {
@@ -390,7 +398,7 @@
 
   .form__impression-wrap {
     padding: 0;
-    margin: 27px 85px 83px 113px;
+    margin: 10px 85px 66px 113px;
   }
 
   .form__sight-wrap {
@@ -400,7 +408,7 @@
 
   .form__field-impression-wrap {
     width: 30%;
-    padding: 0;
+    padding: 17px 0 17px;
     margin: 0;
   }
 

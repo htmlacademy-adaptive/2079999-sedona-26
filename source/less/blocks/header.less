@@ -2,24 +2,26 @@
   min-height: 56px;
 }
 
-.header--nojs {
-  position: relative;
+@media (max-width: @tablet-width) {
+  .header--nojs {
+    position: relative;
 
-  & .menu {
-    position: static;
-    margin-bottom: 56px;
-  }
+    & .menu {
+      position: static;
+      margin-bottom: 56px;
+    }
 
-  & .header__button {
-    display: none;
-  }
+    & .header__button {
+      display: none;
+    }
 
-  & .menu__list--close {
-    display: block;
-  }
+    & .menu__list--close {
+      display: block;
+    }
 
-  & .logo {
-    bottom: -102px;
+    & .logo {
+      bottom: -102px;
+    }
   }
 }
 
