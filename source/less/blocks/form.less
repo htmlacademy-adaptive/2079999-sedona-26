@@ -293,7 +293,7 @@
     border-left: 1px solid #dbdbdb;
 
     & .form__field-wrap {
-      margin-left: 38px;
+      margin-left: 43px;
     }
   }
 
@@ -337,58 +337,58 @@
     padding-top: 9px;
     margin: 0;
   }
-}
 
-.form__intro--sight,
-.form__intro--emotions,
-.form__intro--impression {
-  position: relative;
+  .form__intro--sight,
+  .form__intro--emotions,
+  .form__intro--impression {
+    position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 123px;
-    height: 1px;
-    background-color: #dbdbdb;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 123px;
-    height: 1px;
-    background-color: #dbdbdb;
+  .form__intro--sight::after {
+    left: -161px;
+    top: 24px;
   }
-}
 
-.form__intro--sight::after {
-  left: -161px;
-  top: 24px;
-}
+  .form__intro--emotions::after {
+    left: -200px;
+    top: 40px;
+  }
 
-.form__intro--emotions::after {
-  left: -200px;
-  top: 40px;
-}
+  .form__intro--impression::after {
+    left: -183px;
+    top: 8px;
+  }
 
-.form__intro--impression::after {
-  left: -183px;
-  top: 8px;
-}
+  .form__intro--sight::before {
+    right: -161px;
+    top: 24px;
+  }
 
-.form__intro--sight::before {
-  right: -161px;
-  top: 24px;
-}
+  .form__intro--emotions::before {
+    right: -200px;
+    top: 40px;
+  }
 
-.form__intro--emotions::before {
-  right: -200px;
-  top: 40px;
-}
-
-.form__intro--impression::before {
-  right: -183px;
-  top: 8px;
+  .form__intro--impression::before {
+    right: -183px;
+    top: 8px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -466,7 +466,7 @@
     &::after {
       content: "";
       position: absolute;
-      width: 123px;
+      width: 280px;
       height: 1px;
       background-color: #dbdbdb;
     }
@@ -474,39 +474,39 @@
     &::before {
       content: "";
       position: absolute;
-      width: 123px;
+      width: 280px;
       height: 1px;
       background-color: #dbdbdb;
     }
   }
 
   .form__intro--sight::after {
-    left: -161px;
-    top: 24px;
+    left: -282px;
+    top: 25px;
   }
 
   .form__intro--emotions::after {
-    left: -200px;
+    left: -357px;
     top: 40px;
-  }
+}
 
   .form__intro--impression::after {
-    left: -183px;
-    top: 8px;
+    left: -342px;
+    top: 11px;
   }
 
   .form__intro--sight::before {
-    right: -161px;
+    right: -279px;
     top: 24px;
   }
 
   .form__intro--emotions::before {
-    right: -200px;
+    right: -359px;
     top: 40px;
   }
 
   .form__intro--impression::before {
-    right: -183px;
-    top: 8px;
+    right: -342px;
+    top: 12px;
   }
 }
