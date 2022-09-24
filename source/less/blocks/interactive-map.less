@@ -2,16 +2,34 @@
   height: 350px;
   background-image: url("../img/interactive-map-mobile.jpg");
   background-size: cover;
+  margin-bottom: 40px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/interactive-map-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: @tablet-width) {
   .interactive-map {
     background-image: url("../img/interactive-map-tablet.jpg");
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) and (min-resolution: 2dppx) {
+  .interactive-map {
+    background-image: url("../img/interactive-map-tablet@2x.jpg");
   }
 }
 
 @media (min-width: @desktop-width) {
   .interactive-map {
     background-image: url("../img/interactive-map-desktop.jpg");
+  }
+}
+
+@media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+  .interactive-map {
+    background-image: url("../img/interactive-map-desktop@2x.jpg");
   }
 }
